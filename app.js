@@ -7,7 +7,6 @@ const sideBar = document.querySelector('.sidebar');
 const menu = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon')
 
-
 const hoverSign = document.querySelector('.hover-sign');
 
 const videoList =[video1, video2, video3];
@@ -18,12 +17,12 @@ videoList.forEach (function(video){
         hoverSign.classList.add("active")
     })
     video.addEventListener("mouseout", function(){
-    video.pause();
-    hoverSign.classList.remove("active")
-})
+        video.pause();
+        hoverSign.classList.remove("active")
+    })
 })
 
-// Sidebar elements //
+// Sidebar //
 menu.addEventListener("click", function(){
     sideBar.classList.remove("close-sidebar")
     sideBar.classList.add("open-sidebar")
@@ -32,5 +31,20 @@ menu.addEventListener("click", function(){
 closeIcon.addEventListener("click", function(){
     sideBar.classList.remove("open-sidebar");
     sideBar.classList.add("close-sidebar");
-    
 })
+
+
+// ================================
+// 🔗 Tambahan fungsi tombol Website
+// ================================
+document.querySelectorAll('.bx-link-external1').forEach(icon => {
+    icon.parentElement.addEventListener('click', () => {
+        window.open('https://github.com/fadhlan36/MyPortofolio', '_blank');
+    });
+});
+
+document.querySelectorAll('.bx-link-external2').forEach(icon => {
+    icon.parentElement.addEventListener('click', () => {
+        window.open('https://fadhlan36.github.io/MyPortofolio', '_blank');
+    });
+});
