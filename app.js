@@ -37,11 +37,11 @@ closeIcon.addEventListener("click", function(){
 // ================================
 // 🔗 Tambahan fungsi tombol Website
 // ================================
-document.querySelectorAll('.bx-link-external1').forEach(icon => {
-    icon.parentElement.addEventListener('click', () => {
-        window.open('https://github.com/fadhlan36/MyPortofolio', '_blank');
-    });
-});
+//document.querySelectorAll('.bx-link-external1').forEach(icon => {
+ //   icon.parentElement.addEventListener('click', () => {
+  //      window.open('https://github.com/fadhlan36/MyPortofolio', '_blank');
+  //  });
+//});
 
 document.querySelectorAll('.bx-link-external2').forEach(icon => {
     icon.parentElement.addEventListener('click', () => {
